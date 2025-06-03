@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExploraMundo - Agencia de Viajes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./style/stylemain.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">Explora<span>Mundo</span></div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#destinos">Destinos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <button id="loginBtn">
+              Continuar con Google <i class="bi bi-google"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+      <div class="hero-content animate__animated animate__fadeIn">
+        <h1>Descubre el Mundo con Nosotros</h1>
+        <p>
+          Vive experiencias únicas en los destinos más increíbles del planeta.
+          Diseñamos viajes personalizados para que disfrutes cada momento.
+        </p>
+        <a href="#destinos" class="btn">Explorar Destinos</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="nosotros">
+      <div class="section-title">
+        <h2>Nuestra Agencia</h2>
+        <p>
+          Con más de 15 años de experiencia, nos especializamos en crear
+          experiencias de viaje inolvidables.
+        </p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Tu aventura comienza aquí</h3>
+          <p>
+            En ExploraMundo, creemos que cada viaje es una oportunidad para
+            descubrir no solo nuevos lugares, sino también nuevas partes de ti
+            mismo. Nuestro equipo de expertos en viajes trabaja incansablemente
+            para diseñar itinerarios que superen tus expectativas.
+          </p>
+          <p>
+            Desde relajantes escapadas en la playa hasta emocionantes aventuras
+            en la montaña, nos encargamos de todos los detalles para que tú solo
+            te preocupes por disfrutar.
+          </p>
+          <a
+            href="#contacto"
+            class="btn"
+            style="background-color: var(--accent); border-color: var(--accent)"
+            >Contáctanos</a
+          >
+        </div>
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+            alt="Equipo de viaje"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="section" id="destinos">
+      <div class="section-title">
+        <h2>Destinos Populares</h2>
+        <p>
+          Explora nuestros destinos más solicitados y encuentra la inspiración
+          para tu próximo viaje.
+        </p>
+      </div>
+      <div class="destinations-grid">
+        <div class="destination-card">
+          <div class="destination-image">
+            <img
+              src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+              alt="París, Francia"
+            />
+          </div>
+          <div class="destination-info">
+            <h3>París, Francia</h3>
+            <p>
+              La ciudad del amor te espera con su encanto único, monumentos
+              icónicos y exquisita gastronomía.
+            </p>
+            <div class="price">Desde $1,200</div>
+          </div>
+        </div>
+        <div class="destination-card">
+          <div class="destination-image">
+            <img
+              src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+              alt="Kyoto, Japón"
+            />
+          </div>
+          <div class="destination-info">
+            <h3>Kyoto, Japón</h3>
+            <p>
+              Sumérgete en la cultura tradicional japonesa con sus templos
+              milenarios y hermosos jardines.
+            </p>
+            <div class="price">Desde $2,500</div>
+          </div>
+        </div>
+        <div class="destination-card">
+          <div class="destination-image">
+            <img
+              src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+              alt="Santorini, Grecia"
+            />
+          </div>
+          <div class="destination-info">
+            <h3>Santorini, Grecia</h3>
+            <p>
+              Las icónicas casas blancas con cúpulas azules y espectaculares
+              puestas de sol te dejarán sin aliento.
+            </p>
+            <div class="price">Desde $1,800</div>
+          </div>
+        </div>
+        <div class="destination-card">
+          <div class="destination-image">
+            <img
+              src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+              alt="Nueva York, USA"
+            />
+          </div>
+          <div class="destination-info">
+            <h3>Nueva York, USA</h3>
+            <p>
+              La ciudad que nunca duerme ofrece una energía incomparable y
+              atracciones para todos los gustos.
+            </p>
+            <div class="price">Desde $900</div>
+          </div>
+        </div>
+        <div class="destination-card">
+          <div class="destination-image">
+            <img
+              src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+              alt="Machu Picchu, Perú"
+            />
+          </div>
+          <div class="destination-info">
+            <h3>Machu Picchu, Perú</h3>
+            <p>
+              Descubre el misterio de esta antigua ciudad inca en lo alto de las
+              montañas andinas.
+            </p>
+            <div class="price">Desde $1,500</div>
+          </div>
+        </div>
+        <div class="destination-card">
+          <div class="destination-image">
+            <img
+              src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+              alt="Safari en África"
+            />
+          </div>
+          <div class="destination-info">
+            <h3>Safari en África</h3>
+            <p>
+              Vive la emoción de avistar los "Cinco Grandes" en su hábitat
+              natural en este viaje inolvidable.
+            </p>
+            <div class="price">Desde $3,200</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonios">
+      <div class="section-title">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>Las experiencias de nuestros viajeros hablan por nosotros.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "ExploraMundo hizo realidad nuestro sueño de visitar Japón. Todo
+            estuvo perfectamente organizado, desde los traslados hasta las
+            excursiones. ¡Volveremos a viajar con ellos!"
+          </div>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img
+                src="https://randomuser.me/api/portraits/women/32.jpg"
+                alt="María González"
+              />
+            </div>
+            <div class="author-info">
+              <h4>María González</h4>
+              <p>Viaje a Kyoto, 2023</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "Nuestra luna de miel en Santorini fue mágica gracias a las
+            recomendaciones y atenciones de ExploraMundo. El hotel con vista al
+            mar que nos reservaron fue espectacular."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img
+                src="https://randomuser.me/api/portraits/men/54.jpg"
+                alt="Carlos y Laura M."
+              />
+            </div>
+            <div class="author-info">
+              <h4>Carlos y Laura M.</h4>
+              <p>Luna de miel, 2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "Como viajero frecuente, puedo decir que ExploraMundo es de las
+            mejores agencias con las que he trabajado. Su atención personalizada
+            y conocimiento de destinos es incomparable."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img
+                src="https://randomuser.me/api/portraits/men/67.jpg"
+                alt="Javier Rodríguez"
+              />
+            </div>
+            <div class="author-info">
+              <h4>Javier Rodríguez</h4>
+              <p>Viajero frecuente</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contacto">
+      <div class="section-title">
+        <h2>Contáctanos</h2>
+        <p>Estamos aquí para ayudarte a planificar el viaje de tus sueños.</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Información de contacto</h3>
+          <div class="contact-details">
+            <p><i>📍</i> Av. Viajera 1234, Ciudad Viaje</p>
+            <p><i>📞</i> +1 234 567 890</p>
+            <p><i>✉️</i> hola@exploramundo.com</p>
+            <p><i>⏱️</i> Lunes a Viernes: 9am - 6pm</p>
+          </div>
+          <h3>Síguenos</h3>
+          <div class="social-links">
+            <a href="#"><i>📱</i></a>
+            <a href="#"><i>📸</i></a>
+            <a href="#"><i>🐦</i></a>
+            <a href="#"><i>📌</i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input type="tel" id="phone" />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>ExploraMundo</h3>
+          <p>
+            Creando experiencias de viaje inolvidables desde 2008. Nuestra
+            pasión es hacer que cada viaje sea único y especial.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Enlaces Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Servicios</h3>
+          <ul class="footer-links">
+            <li><a href="#">Viajes personalizados</a></li>
+            <li><a href="#">Lunas de miel</a></li>
+            <li><a href="#">Viajes en grupo</a></li>
+            <li><a href="#">Aventura</a></li>
+            <li><a href="#">Cruceros</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <p>
+            Suscríbete para recibir ofertas exclusivas e inspiración para tus
+            próximos viajes.
+          </p>
+          <form>
+            <div class="form-group">
+              <input type="email" placeholder="Tu email" required />
+            </div>
+            <button type="submit" class="submit-btn">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 ExploraMundo. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Animaciones al hacer scroll
+      document.addEventListener("DOMContentLoaded", function () {
+        const observerOptions = {
+          threshold: 0.1,
+        };
+
+        const observer = new IntersectionObserver(function (entries, observer) {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, observerOptions);
+
+        // Observar secciones
+        const sections = document.querySelectorAll(".section");
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+
+        // Observar tarjetas de destino
+        const destinationCards = document.querySelectorAll(".destination-card");
+        destinationCards.forEach((card, index) => {
+          // Añadir un pequeño retraso a cada tarjeta para un efecto escalonado
+          card.style.transitionDelay = `${index * 0.1}s`;
+          observer.observe(card);
+        });
+
+        // Observar testimonios
+        const testimonialCards = document.querySelectorAll(".testimonial-card");
+        testimonialCards.forEach((card, index) => {
+          card.style.transitionDelay = `${index * 0.1}s`;
+          observer.observe(card);
+        });
+
+        // Efecto de cambio de header al hacer scroll
+        const header = document.querySelector("header");
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 50) {
+            header.style.padding = "10px 5%";
+            header.style.background = "rgba(26, 37, 47, 0.95)";
+          } else {
+            header.style.padding = "20px 5%";
+            header.style.background = "rgba(255, 255, 255, 0.95)";
+          }
+        });
+
+        // Smooth scrolling para enlaces del menú
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+          });
+        });
+      });
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
